@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+:root {
+  --font-size-10: 0.625rem;
+  --font-size-12: 0.75rem;
+  --font-size-13: 0.813rem;
+  --font-size-14: 0.875rem;
+  --font-size-15: 0.938rem;
+  --font-size-16: 1rem;
+  --font-size-17: 1.063rem;
+  --font-size-18: 1.125rem;
+  --font-size-19: 1.188rem;
+  --font-size-20: 1.25rem;
+  --font-size-21: 1.313rem;
+  --font-size-24: 1.5rem;
+  --font-size-25: 1.563rem;
+  --font-size-26: 1.625rem;
+  --font-size-28: 1.75rem;
+  --font-size-30: 1.875rem;
+  --font-size-32: 2rem;
+  --font-size-33: 2.063rem;
+  --font-size-35: 2.188rem;
+  --font-size-38: 2.375rem;
+  --font-size-40: 2.5rem;
+  --font-size-46: 2.9rem;
+  --font-size-48: 3rem;
+  --font-size-129: 8.118rem;
+
+  --main-font: 'NanumSquareNeo-Variable', -apple-system, BlinkMacSystemFont,
+    'Malgun Gothic', '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+
+  --main-font-color-: #222;
+}

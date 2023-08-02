@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+:root {
+  --en-font: 'Gotham', 'Arial', sans-serif;
+  --ko-font-nn: 'NanumSquare', '맑은고딕', sans-serif;
+  --ko-font-pr: 'Pretendard Variable', '맑은고딕', sans-serif;
+}
+
+/***** header *****/
+header {
+  color: #fff;
+  background-color: transparent;
+}
+
+.main-menu .header {
+  padding: 1vh 0 1vh 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  height: 7.813vw;
+}
+
+.header p:first-child {
+  font-weight: 200;
+}
+
+.header.active {
+  background-color: #191919;
+  color: #fff;
+}
+
+/***** 메뉴 *****/
+.menu {
+  width: 100%;
+  height: 100vh;
+  padding: 8vh 0 0vw 5vw;
+  display: none;
+  background-color: #191919;
+  text-transform: uppercase;
+  position: fixed; /* 수정부분 */
+  top: 10vw;
+  z-index: 1;
+}
+
+.menu li {
+  margin: 1.5vw;
+  position: relative;
+}
+
+.menu a {
+  font-family: var(--ko-font-pr);
+  font-weight: 500;
+  font-size: 4.167vw;
+}
+
+/***** menu hover 효과 *****/
+.menu li:nth-child(1) a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.521vw;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ddd;
+}
+
+.menu li:nth-child(1) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+.menu li:nth-child(2) a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.521vw;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.menu li:nth-child(2) a:hover:after {
+  width: 35vw;
+  opacity: 1;
+}
+
+.menu li:nth-child(3) a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.5vw;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.menu li:nth-child(3) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+.menu li:nth-child(4) a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.5vw;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.menu li:nth-child(4) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+.menu li:nth-child(5) a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.5vw;
+  width: 1px;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0;
+  background-color: #ffffff;
+}
+.menu li:nth-child(5) a:hover:after {
+  width: 30vw;
+  opacity: 1;
+}
+
+/***** 이름 *****/
+.name {
+  font-family: var(--main-font);
+  font-size: 2.604vw;
+  font-weight: 400;
+  text-align: center;
+  /* width: 8vw; */
+  height: 6vh;
+  line-height: 6vh;
+  /* margin: 6px 0 0 30px; */
+
+  margin: 2px 0 0 0.5vw;
+  transition: 0.4s;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.name:hover {
+  transform: translateY(-7px);
+}
+
+/***** 햄버거 메뉴*****/
+.hamburger_btn {
+  margin: 1.5vh 2vw;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.04vw;
+  user-select: none;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.8em;
+  width: 5em;
+}
+
+.checkmark span {
+  width: 2.604vw;
+  height: 0.26vw;
+  background-color: #fff;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkmark span.active {
+  background-color: #fff;
+}
+
+.checkmark span:nth-child(1) {
+  top: 10%;
+}
+
+.checkmark span:nth-child(2) {
+  top: 50%;
+}
+
+.checkmark span:nth-child(3) {
+  top: 90%;
+}
+
+.container input:checked + .checkmark span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.container input:checked + .checkmark span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.container input:checked + .checkmark span:nth-child(3) {
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  transform: translateX(-50px);
+  opacity: 0;
+}
