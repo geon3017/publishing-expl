@@ -105,6 +105,16 @@ header .main-name .name-first {
   border-bottom: 1px solid #fff;
   padding-bottom: 12.5vw;
 }
+.home-page {
+  display: flex;
+  justify-content: space-between;
+  }
+.home-page li p{
+  margin-right: 6vw;
+  font-size: 1.323vw;
+  line-height: 2;
+  
+}
 /****** 퍼블리싱 ******/
 .publishing {
   margin-top: 8.854vw;
